@@ -8,7 +8,7 @@ public class ejemplo {
      Scanner leerT=new Scanner(System.in);
 
     public static void graficarA() {
-       System.out.println("Ingese Altura de la Letra:"); 
+       System.out.println("Ingrese Altura de la Letra:"); 
        int cantF=leerT.nextInt();
        System.out.println("Ingrese num fila para Linea:");
        int numFilLinea=leerT.nextInt();
