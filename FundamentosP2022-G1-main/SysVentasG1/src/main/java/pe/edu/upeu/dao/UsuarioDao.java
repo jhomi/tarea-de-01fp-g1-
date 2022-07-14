@@ -27,7 +27,12 @@ public class UsuarioDao extends AppCrud{
     agregarContenido(leerA, uTo);
    }
 
-   public boolean loginValidar(String usuario, String clave) {
+   /**
+ * @param usuario
+ * @param clave
+ * @return
+ */
+public boolean loginValidar(String usuario, String clave) {
         leerA=new LeerArchivo(TABLA_USUARIO);
         Object[][] dataU=buscarContenido(leerA, 0, usuario);
         if(dataU.length==1 && String.valueOf(dataU[0][1]).equals(clave)){
